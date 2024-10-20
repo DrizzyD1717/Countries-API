@@ -1,0 +1,83 @@
+.overallTotalCountries {
+  width: 100vw;
+  padding: 2rem 3rem;
+}
+
+.searchRegion {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+.searchRegion .search input {
+  padding: 0.5rem 1rem;
+}
+
+.theCountries {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 2rem;
+}
+
+.country {
+  min-width: 200px;
+  background-color: var(--project-elements);
+}
+
+.country .countryDetails {
+  width: 80%;
+  margin: 0 auto;
+  padding: 1rem 0 2.5rem 0;
+}
+
+.country img {
+  width: 100%;
+}
+
+.country .countryDetails h3 {
+  color: var(--project-text);
+  padding-bottom: 1rem;
+}
+
+.country .countryDetails p {
+  font-size: 14px;
+  color: var(--project-text);
+}
+
+.country .countryDetails p span {
+  color: var(--project-input);
+}
+
+@media (max-width: 1000px) {
+  .theCountries {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (max-width: 700px) {
+  .theCountries {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 500px) {
+  .theCountries {
+    grid-template-columns: 1fr;
+  }
+
+  .searchRegion {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .searchRegion .search {
+    width: 100%;
+  }
+
+  .searchRegion .search input {
+    width: 100%;
+    padding: 0.5rem 1rem;
+  }
+}

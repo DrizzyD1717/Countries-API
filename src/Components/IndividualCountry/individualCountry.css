@@ -1,0 +1,84 @@
+.SelectedCountryOverall {
+  width: 100%;
+  background-color: var(--project-background);
+  padding: 2rem;
+  min-height: 100vh;
+}
+
+.SelectedCountryOverall .goBack a {
+  margin-bottom: 2rem;
+}
+
+.selectedCountry {
+  display: flex;
+  width: 100%;
+  gap: 2rem;
+}
+
+section {
+  width: 100%;
+}
+
+.selectedCountry .img {
+  width: 50%;
+}
+
+.selectedCountry img {
+  width: 100%;
+}
+
+.selectedCountry .aboutCountry {
+  width: 100%;
+}
+
+.selectedCountry .aboutCountry h2 {
+  padding: 1rem 0 1rem 0;
+  font-size: 2.5rem;
+  color: var(--project-text);
+}
+
+.selectedCountry .mainInfo {
+  display: flex;
+  margin-bottom: 1.5rem;
+  gap: 1rem;
+}
+
+.selectedCountry .mainInfo h3 {
+  color: var(--project-text);
+  padding-bottom: 0.5rem;
+}
+
+.selectedCountry .mainInfo h3 span {
+  color: var(--project-input);
+}
+
+.selectedCountry .borderCountries h3 {
+  color: var(--project-text);
+  padding-bottom: 0.5rem;
+}
+
+.selectedCountry .borderCountries h3 span {
+  padding: 0.5rem;
+  border: var(--project-input);
+  text-decoration: none;
+  box-shadow: 1px 1px 1px black;
+  background: var(--project-background);
+  color: var(--project-text);
+  display: inline-block;
+  margin-right: 0.5rem;
+}
+
+@media (max-width: 700px) {
+  .selectedCountry {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .selectedCountry .mainInfo {
+    flex-direction: column;
+  }
+
+  .selectedCountry .img {
+    width: 80%;
+  }
+}

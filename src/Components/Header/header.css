@@ -1,0 +1,41 @@
+header {
+  width: 100%;
+  padding: 2rem 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+  background-color: var(--project-elements);
+  color: var(--project-text);
+}
+
+:root {
+  --project-background: hsl(0, 0%, 98%);
+  --project-input: hsl(0, 0%, 52%);
+  --project-text: hsl(200, 15%, 8%);
+  --project-elements: hsl(0, 0%, 100%);
+}
+
+[project-theme="dark"] {
+  --project-background: hsl(207, 26%, 17%);
+  --project-input: hsl(0, 0%, 52%);
+  --project-text: hsl(0, 0%, 100%);
+  --project-elements: hsl(209, 23%, 22%);
+}
+
+header h1 {
+  color: var(--project-text);
+}
+
+@media (max-width: 700px) {
+  header {
+    padding: 2rem 2rem;
+  }
+  header h1 {
+    font-size: 1rem;
+  }
+
+  header .darkbtn {
+    font-size: 13px;
+  }
+}

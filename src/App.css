@@ -1,0 +1,35 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+a {
+  padding: 0.5rem;
+  border: var(--project-input);
+  text-decoration: none;
+  box-shadow: 1px 1px 1px black;
+  background: var(--project-background);
+  color: var(--project-text);
+  display: inline-block;
+}
+
+.overall {
+  width: 100vw;
+  background-color: var(--project-background);
+}
+
+:root {
+  --project-background: hsl(0, 0%, 98%);
+  --project-input: hsl(0, 0%, 52%);
+  --project-text: hsl(200, 15%, 8%);
+  --project-elements: hsl(0, 0%, 100%);
+}
+
+[project-theme="dark"] {
+  --project-background: hsl(207, 26%, 17%);
+  --project-input: hsl(0, 0%, 52%);
+  --project-text: hsl(0, 0%, 100%);
+  --project-elements: hsl(209, 23%, 22%);
+}
